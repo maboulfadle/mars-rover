@@ -14,7 +14,7 @@ public record Position(int x, int y) {
      * @param direction the direction
      * @return the forward position
      */
-    public Position forward(final Direction direction) {
+    public Position getForwardPosition(final Direction direction) {
         return getPosition(direction, 1);
     }
 
@@ -24,7 +24,7 @@ public record Position(int x, int y) {
      * @param direction the direction
      * @return the backward position
      */
-    public Position behind(final Direction direction) {
+    public Position getBackwardPosition(final Direction direction) {
         return getPosition(direction, -1);
     }
 
