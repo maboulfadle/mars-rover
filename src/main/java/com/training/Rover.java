@@ -65,12 +65,12 @@ public class Rover {
     }
 
     private boolean moveForward() {
-        final Position newPosition = position.getForwardPosition(direction);
+        final Position newPosition = position.forward(direction);
         return moveTo(wrapPosition(newPosition));
     }
 
     private boolean moveBackward() {
-        final Position newPosition = position.getBackwardPosition(direction);
+        final Position newPosition = position.behind(direction);
         return moveTo(wrapPosition(newPosition));
     }
 

@@ -31,7 +31,7 @@ public class PositionTest {
     @Test
     public void testGetForwardPosition_NORTH() {
         // when
-        final Position expected = position.getForwardPosition(NORTH);
+        final Position expected = position.forward(NORTH);
 
         // then
         assertThat(expected.x()).isEqualTo(position.x());
@@ -41,7 +41,7 @@ public class PositionTest {
     @Test
     public void testGetForwardPosition_EAST() {
         // when
-        final Position expected = position.getForwardPosition(EAST);
+        final Position expected = position.forward(EAST);
 
         // then
         assertThat(expected.x()).isEqualTo(position.x() + 1);
@@ -51,7 +51,7 @@ public class PositionTest {
     @Test
     public void testGetBackwardPosition_NORTH() {
         // when
-        final Position expected = position.getBackwardPosition(NORTH);
+        final Position expected = position.behind(NORTH);
 
         // then
         assertThat(expected.x()).isEqualTo(position.x());
@@ -61,7 +61,7 @@ public class PositionTest {
     @Test
     public void testGetBackwardPosition_EAST() {
         // when
-        final Position expected = position.getBackwardPosition(EAST);
+        final Position expected = position.behind(EAST);
 
         // then
         assertThat(expected.x()).isEqualTo(position.x() - 1);
