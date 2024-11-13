@@ -80,7 +80,7 @@ The project includes a set of JUnit tests for verifying functionality and edge c
 mvn test
 ```
 
-## Design Decisions
+## Design
 
 This solution is structured to separate core responsibilities:
 - **Movement**: Handled by `Position`.
